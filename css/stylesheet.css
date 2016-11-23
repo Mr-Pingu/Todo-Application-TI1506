@@ -3,27 +3,70 @@
 
     position: fixed;
     top: 0;
-    background-color: #9999FF;
+    background-color: #FFF;
     opacity: 80%;
-    height: 100px;
+    height: 50px;
     width: 100%;
+    opacity: 0.37;
 
 }
 .div {
   margin: 0%;
 }
 
+.logo {
+  margin: auto;
+  margin-top: 10%;
+  height: 100px;
+  width: 250px;
+  background-color: #000;
+
+}
+
+.inputfields {
+  margin: 10%;
+}
+
+#login_name{
+  width: 250px;
+  height: 30px;
+    border-radius: 5px;
+
+}
+#login_password{
+  width: 250px;
+  height: 30px;
+  margin-top: 5%;
+    border-radius: 5px;
+}
+#login_button{
+  width: 250px;
+  height: 30px;
+  margin-top: 10%;
+  background: linear-gradient(#11D8D2,#15EBE4);
+  border-color: #11D8D2;
+  border-radius: 5px;
+}
+#register_button{
+  width: 250px;
+  height: 30px;
+  margin-top: 5px;
+  border-radius: 5px;
+  background: linear-gradient(#11D8D2,#15EBE4);
+
+}
 .login{
   border-width: thin;
   border-color: grey;
-  width: 600px;
-  height: 650px;
+  width: 300px;
+  height: 350px;
   box-shadow: 5px 10px 20px -6px black;
   position: absolute;
-  margin-top: 30%;
-  margin-left: 35%;
+  margin-top: 10%;
+  margin-left: 38%;
   border-radius: 10px;
   background: #FFF;
+
 
 }
 
@@ -47,6 +90,8 @@ body {
       background-position: center top;
       background-repeat: no-repeat;
       margin: 0;
+       background-size: 100%;
+       background-attachment: fixed;
 }
 
 
@@ -54,8 +99,8 @@ body {
 
     border-width: thin;
     border-color: grey;
-    width: 600px;
-    height: 650px;
+    width: 400px;
+    height: 850px;
     box-shadow: 5px 10px 20px -6px black;
     position: absolute;
     margin-top: 10%;
