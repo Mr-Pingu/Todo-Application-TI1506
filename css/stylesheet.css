@@ -53,29 +53,7 @@
   background: linear-gradient(#11D8D2,#15EBE4);
 }
 
-#addtask_button{
-  width: 250px;
-  height: 30px;
-  border-radius: 5px;
-  background: linear-gradient(#11D8D2,#15EBE4);
-}
 
-#popup1 {
-  display: none;
-  width:400px;
-  height:600px;
-  opacity:.95;
-  top:0;
-  left:0;
-  position:fixed;
-  left: 50%;
-  background-color:#313131;
-  overflow:auto
- }
-
-
-
-}
 .login{
   border-width: thin;
   border-color: grey;
@@ -87,8 +65,6 @@
   margin-left: 38%;
   border-radius: 10px;
   background: #FFF;
-
-
 }
 
 .textdiv {
@@ -163,3 +139,23 @@ margin-left: 5%;
     background: #FFF;
 
     }
+
+    #addtask_button{
+      width: 250px;
+      height: 30px;
+      border-radius: 5px;
+      background: linear-gradient(#11D8D2,#15EBE4);
+    }
+
+    #popup1 {
+      display: none;
+      width:400px;
+      height:600px;
+      opacity:.95;
+      top:0;
+      left:0;
+      position:fixed;
+      left: 50%;
+      background-color:#313131;
+      overflow:auto
+     }
