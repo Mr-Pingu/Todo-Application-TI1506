@@ -23,17 +23,31 @@
     <div class="logo">
     </div>
     <div class="inputfields">
-     <input id="login_name" placeholder="username or email"> </input>
+      <form name="logininfo" onsubmit="return loginuser(logininfo);">
+     <input id="login_name" placeholder="username or email" name="usr"> </input>
      <br>
-     <input id="login_password" type="password" placeholder="password"></input>
+     <input id="login_password" type="password" placeholder="password" name="pword"></input>
      <br>
      <input id="login_button" type="submit" value="Login"></input>
-     <input id="register_button" type="submit" value="Register"></input>
+     <input id="register_button" type="submit" value="Register"></input
+   </form>
      <a href="todolist.html"> Naar todolist </a>
-    
+
      <br>
      </div
    </div>
+<script>
 
+function loginuser(form){
+  var un = document.logininfo.usr.value;
+  var pw = document.logininfo.pword.value;
+
+  console.log(un);
+  console.log(pw);
+  window.location="todolist.html";
+
+
+}
+</script>
 </body>
 </html>
