@@ -19,7 +19,19 @@
   margin-top: 10%;
   height: 100px;
   width: 250px;
-  background-color: #000;
+  background-color: #FFF;
+  opacity: 0.8;
+
+}
+
+.logopic {
+  background-color: #FFF;
+  background-image: url(../Media/yetib.png);
+background-size: 100%;
+width: 100px;
+height: 100px;
+margin-left: 30%;
+
 
 }
 
@@ -46,6 +58,8 @@
   background: linear-gradient(#11D8D2,#15EBE4);
   border-color: #11D8D2;
   border-radius: 5px;
+  color: white;
+    font-weight: bolder;
 }
 #register_button{
   width: 250px;
@@ -53,6 +67,8 @@
   margin-top: 5px;
   border-radius: 5px;
   background: linear-gradient(#11D8D2,#15EBE4);
+  color: white;
+  font-weight: bolder;
 
 }
 .login{

@@ -1,53 +1,54 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <title>Stay with me, get your work done</title>
+    <title>Stay with me, get your work done</title>
 
-  <meta charset="UTF-8">
-  <meta name="StayWithMe" content="Task manager">
-  <meta name="keywords" content="HTML, JavaScript, Todo, Task,">
-  <meta name="author" content="Joris Jonk & Karsten van Herwaarden">
+    <meta charset="UTF-8">
+    <meta name="StayWithMe" content="Task manager">
+    <meta name="keywords" content="HTML, JavaScript, Todo, Task,">
+    <meta name="author" content="Joris Jonk & Karsten van Herwaarden">
 
-  <link rel="stylesheet" href="css/stylesheet.css">
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <script src="js/loginscript.js"></script>
 </head>
 
 <body>
-  <div class="topbar">
-    <div class="textdiv">
-    ToDo
+    <div class="topbar">
+        <div class="textdiv">
+
+        </div>
     </div>
-  </div>
 
 
-  <div class="login">
-    <div class="logo">
+    <div class="login">
+        <div class="logo">
+            <div class="logopic">
+            </div>
+        </div>
+        <div class="inputfields">
+            <form name="logininfo" onsubmit="return loginuser(logininfo);">
+                <input id="login_name" placeholder=" username or email" name="usr"> </input>
+                <br>
+                <input id="login_password" type="password" placeholder=" password" name="pword"></input>
+                <br>
+                <input id="login_button" type="submit" value="Login"></input>
+                <input id="register_button" type="submit" value="Register"></input </form>
+                <a href="todolist.html"> Naar todolist </a>
+        </div>
     </div>
-    <div class="inputfields">
-      <form name="logininfo" onsubmit="return loginuser(logininfo);">
-     <input id="login_name" placeholder="username or email" name="usr"> </input>
-     <br>
-     <input id="login_password" type="password" placeholder="password" name="pword"></input>
-     <br>
-     <input id="login_button" type="submit" value="Login"></input>
-     <input id="register_button" type="submit" value="Register"></input
-   </form>
-     <a href="todolist.html"> Naar todolist </a>
+    <script>
+        function loginuser(form) {
+            var un = document.logininfo.usr.value;
+            var pw = document.logininfo.pword.value;
 
-     <br>
-     </div
-   </div>
-<script>
-
-function loginuser(form){
-  var un = document.logininfo.usr.value;
-  var pw = document.logininfo.pword.value;
-
-  console.log(un);
-  console.log(pw);
-  window.location="todolist.html";
+            console.log(un);
+            console.log(pw);
+            window.location = "todolist.html";
 
 
-}
-</script>
+        }
+    </script>
 </body>
+
 </html>
