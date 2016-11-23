@@ -17,6 +17,15 @@ function addtodo(naam, prio, datum, af){
   array.push(task);
 }
 
+//Functions for popup
+function todo_popup_show() {
+document.getElementById('popup1').style.display = "block";
+}
+function todo_popup_hide(){
+document.getElementById('popup1').style.display = "none";
+}
+
+// Functions for editing
 function editprio(index){
   if (array[index] == 0){
   array[index].priority = 1;}
