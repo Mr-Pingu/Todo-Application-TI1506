@@ -1,15 +1,35 @@
-.div1 {
-    margin-top: 3%;
-    margin-left: : 10%;
-    position: static;
+.topbar {
+
+
+    position: fixed;
+    top: 0;
     background-color: #9999FF;
     opacity: 80%;
-    height: 200px;
+    height: 100px;
+    width: 100%;
+
+}
+.div {
+  margin: 0%;
+}
+
+.login{
+  border-width: thin;
+  border-color: grey;
+  width: 600px;
+  height: 650px;
+  box-shadow: 5px 10px 20px -6px black;
+  position: absolute;
+  margin-top: 30%;
+  margin-left: 35%;
+  border-radius: 10px;
+  background: #FFF;
+
 }
 
 .textdiv {
-    position: absolute;
-    margin-top: 5%;
+    position: relative;
+    margin-top: 2%;
     margin-left: 40%;
     height: 50px;
     width: 200px
@@ -23,9 +43,10 @@
 
 body {
 
-      background-image: url("bg_splash.jpg");
+      background-image: url("../bg_4.jpg");
       background-position: center top;
       background-repeat: no-repeat;
+      margin: 0;
 }
 
 
@@ -36,10 +57,11 @@ body {
     width: 600px;
     height: 650px;
     box-shadow: 5px 10px 20px -6px black;
-    position: relative;
-    margin-top: 1%;
+    position: absolute;
+    margin-top: 10%;
     margin-left: 35%;
     border-radius: 10px;
+    background: #FFF;
 
     }
 
@@ -60,3 +82,18 @@ width: 600px;
 table {
 margin-left: 5%;
 }
+
+.boxed2 {
+
+    border-width: thin;
+    border-color: grey;
+    width: 600px;
+    height: 650px;
+    box-shadow: 5px 10px 20px -6px black;
+    position: relative;
+
+    margin-left: 35%;
+    border-radius: 10px;
+    background: #FFF;
+
+    }
