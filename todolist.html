@@ -4,6 +4,8 @@
 <head>
 
   	<link rel="stylesheet" href="css/stylesheet.css">
+
+    <script src="js/todoscript.js"></script>
   <title>todo page</title>
 
 
@@ -63,8 +65,33 @@
                 <td> <time datetime="2016-11-16 20:00"> </time>2016-11-18</td>
         </table>
     </div>
+
+
+    <button id="addtask_button" onclick="todo_popup_show()"> Add Task </button>
+    <br>
+
+    <!--
+test buttons
+    -->
+    <button onclick="todo_popup_hide()"> hide </button>
   </div>
-  
+
+
+<!--
+Popup Div voor het toevoegen van een taak, nog niet goed gestyled. Moet standaard gehide zijn.
+id komt voor in css + js
+-->
+
+<div class="addtask_popup" id="popup1">
+  <form name="taskinfo">
+    <input name="taskname" placeholder="todo here" > </input>
+    <br>
+    <input name="submit" type="submit" onclick="todo_popup_hide()"></input>
+  </form>
+</div>
+
+
+
 
 </body>
 </html>
