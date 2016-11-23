@@ -1,0 +1,56 @@
+.div1 {
+    margin-top: 3%;
+    margin-left: : 10%;
+    position: static;
+    background-color: #FFF;
+    opacity: 80%;
+    height: 200px;
+}
+
+.textdiv {
+    position: absolute;
+    margin top: 40%;
+    margin right: 40%;
+}
+
+.div2 {
+    background-color: #fff;
+    height: 400px;
+}
+
+body {
+      background: linear-gradient(#9999FF, #F1F5F9);
+}
+
+.boxed {
+
+    border-width: thin;
+    border-color: grey;
+    width: 600px;
+    height: 650px;
+    box-shadow: 5px 10px 20px -6px black;
+    position: relative;
+    margin-top: 1%;
+    margin-left: 35%;
+    border-radius: 10px;
+    background-color: white;
+
+}
+
+.editoptions {
+margin: 5%;
+position: relative;
+
+height: 50px;
+width: 600px;
+}
+
+.thelist {
+  position: relative;
+  margin-top: 20%;
+  margin left: 20%;
+}
+
+table {
+margin-left: 5%;
+}
