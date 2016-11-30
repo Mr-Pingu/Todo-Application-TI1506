@@ -1,4 +1,9 @@
-var array = array();
+var todolist = [];
+
+var scntDiv = $('t_newadd');
+var i = $('t_newadd tr').size() + 1;
+
+
 
 
 function loginuser(form){
@@ -12,9 +17,31 @@ function loginuser(form){
 
 }
 
-function addtodo(naam, prio, datum, af){
-  var task = {name: naam, priority: prio, date: datum, done:af}
-  array.push(task);
+function addtodo(form){
+  var task = {id: todolist.length,taaknaam: form.taskname.value, priority: form.priority.value,date: form.date.value, done: form.done.value}
+  todolist.push(task);
+  console.log(todolist[0]);
+}
+
+$('#addScnt').click(function(){
+  scntDiv.append('<tr><td> todo: </td><td> prioriteit </td><td> afgewerkt?</td><td>deadline</td></tr>');
+    i++;
+    return false;
+})
+
+
+// Sorteer functies
+function sort_date(){
+
+}
+
+function sort_prio(){
+
+}
+
+
+function by_observer(){
+  return false;
 }
 
 //Functions for popup

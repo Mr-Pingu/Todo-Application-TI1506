@@ -38,31 +38,22 @@
         <u>  hier komt text te staan in de vorm van een paragraaf </u>
 
  </div>
+
  <div class="thelist">
-        <table style="width:80%" >
+        <table style="width:80%" class="ajaxlist" >
+          <thead>
             <tr>
                 <th> todo: </th>
                 <th> prioriteit </th>
                 <th> afgewerkt? </th>
                 <th> deadline </th>
             </tr>
-            <tr>
-                <td> je moeder </td>
-                <td> 100 </td>
-                <td> <input type="checkbox" name="check1" value="check"></td>
-                <td> <time datetime="2016-11-16 20:00"> </time>2016-11-16</td>
-            </tr>
-            <tr>
-                <td> je schoonmoeder </td>
-                <td> 80 </td>
-                <td> <input type="checkbox" name="check2" value="unchecked1"></td>
-                <td> <time datetime="2016-11-16 20:00"> </time>2016-11-17</td>
-            </tr>
-            <tr>
-                <td> je grootmoeder </td>
-                <td> 60 </td>
-                <td> <input type="checkbox" name="check3" value="unchecked2"></td>
-                <td> <time datetime="2016-11-16 20:00"> </time>2016-11-18</td>
+          </thead>
+
+          <tbody id="t_newadd">
+
+          </tbody>
+
         </table>
     </div>
 
@@ -74,6 +65,7 @@
 test buttons
     -->
     <button onclick="todo_popup_hide()"> hide </button>
+    <a href="#" id="addScnt"> New row </a>
   </div>
 
 
@@ -83,11 +75,23 @@ id komt voor in css + js
 -->
 
 <div class="addtask_popup" id="popup1">
-  <form name="taskinfo">
+
+  <form name="taskinfo" onsubmit="return by_observer();">
+    //taaknaam
     <input name="taskname" placeholder="todo here" > </input>
     <br>
-    <input name="submit" type="submit" onclick="todo_popup_hide()"></input>
+    //priority
+    <input name="priority" type="checkbox"> </input>
+    <br>
+    //datum
+    <input name="date" type="date"> <br> </input>
+    //af
+    <input name="done" type="checkbox"> </input>
+    <br>
+
+    <input name="submit" type="button" onclick="todo_popup_hide();"></input>
   </form>
+
 </div>
 
 
