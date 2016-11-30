@@ -77,8 +77,10 @@ function editdone(newdone){
 }
 
 function showtodofromarray(array) {
+  removeoldtodos();
   for(i = 0;i < todolist.length; i++){
   var tablerow = document.createElement("tr");
+  tablerow.id = "tr";
   var tabledata1 = document.createElement("td");
   var node = document.createTextNode(array[i][0]);
   tabledata1.appendChild(node);
@@ -138,15 +140,19 @@ console.log(todolist)
 }
 
 function removeoldtodos() {
-    var checkp = document.getElementById("chatlog");
-    var checkc = document.getElementById("n1");
-
+    var element = document.getElementById("t_newadd");
+    var checkc = document.getElementById("tr");
+console.log(checkc);
 
     while (checkc !== null) {
-        var parent = document.getElementById("chatlog");
-        var child = document.getElementById("n1");
+      var parent = document.getElementById("t_newadd");
+        var child = document.getElementById("tr");
 
         parent.removeChild(child);
-        checkc = document.getElementById("n1");
+        checkc = document.getElementById("tr");
     }
+}
+
+function remove(id){
+  todolist.splice(id, 1);
 }
