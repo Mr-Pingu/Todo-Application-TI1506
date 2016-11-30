@@ -1,7 +1,5 @@
 var todolist = [];
 
-var scntDiv = $('t_newadd');
-var i = $('t_newadd tr').size() + 1;
 
 
 
@@ -18,16 +16,15 @@ function loginuser(form){
 }
 
 function addtodo(form){
-  var task = {id: todolist.length,taaknaam: form.taskname.value, priority: form.priority.value,date: form.date.value, done: form.done.value}
+  var name = form.taskname.value;
+  var prio = form.priority.value;
+  var date = form.date.value;
+  var due = form.done.value;
+  var task = [name,prio,date,due];
   todolist.push(task);
   console.log(todolist[0]);
 }
 
-$('#addScnt').click(function(){
-  scntDiv.append('<tr><td> todo: </td><td> prioriteit </td><td> afgewerkt?</td><td>deadline</td></tr>');
-    i++;
-    return false;
-})
 
 
 // Sorteer functies
@@ -77,4 +74,32 @@ function editdone(newdone){
   if (array[index] == 0){
   array[index].priority = 1;}
   else {array[index].priority = 0;}
+}
+
+function showtodofromarray(array) {
+  for(i = 0;i < todolist.length; i==)
+  var tablerow = document.createElement("tr");
+  var tabledata1 = document.createElement("td");
+  var node = document.createTextNode(array[0][0]);
+  tabledata1.appendChild(node);
+  var tabledata2 = document.createElement("td");
+  var node2 = document.createTextNode(array[0][1]);
+    tabledata2.appendChild(node2);
+  var tabledata3 = document.createElement("td");
+  var node3 = document.createTextNode(array[0][2]);
+    tabledata3.appendChild(node3);
+  var tabledata4 = document.createElement("td");
+  var node4 = document.createTextNode(array[0][3]);
+    tabledata4.appendChild(node4);
+
+  tablerow.appendChild(tabledata1);
+  tablerow.appendChild(tabledata2);
+tablerow.appendChild(tabledata3);
+tablerow.appendChild(tabledata4);
+
+var element = document.getElementById("t_newadd");
+element.appendChild(tablerow);
+
+
+    //chatlog.scrollTop = chatlog.scrollHeight;
 }

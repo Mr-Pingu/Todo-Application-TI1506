@@ -58,8 +58,8 @@
     </div>
 
 
-    <button id="addtask_button" onclick="todo_popup_show()"> Add Task </button>
-    <br>
+    <button id="addtask_button" onclick="addtodo();"> Add Task </button>
+      <button id="show" onclick="showtodofromarray(todolist);"> showfromarray</button>
 
     <!--
 test buttons
@@ -89,7 +89,7 @@ id komt voor in css + js
     <input name="done" type="checkbox"> </input>
     <br>
 
-    <input name="submit" type="button" onclick="todo_popup_hide();"></input>
+    <input name="submit" type="button" onclick="addtodo(taskinfo);"></input>
   </form>
 
 </div>
