@@ -47,6 +47,8 @@
                 <th> prioriteit </th>
                 <th> afgewerkt? </th>
                 <th> deadline </th>
+                <th> edit </th>
+                <th> remove </th>
             </tr>
           </thead>
 
@@ -56,9 +58,30 @@
 
         </table>
     </div>
-
-
-    <button id="addtask_button" onclick="addtodo();"> Add Task </button>
+    <div class="editbuttons">
+      <button name="but1" onclick="showeditbutton(1)"></button>
+      <br>
+          <button name="but2" onclick="showeditbutton(2)"></button>
+                <br>
+            <button name="but3" onclick="showeditbutton(3)"></button>
+                  <br>
+      <button name="but4" onclick="showeditbutton(4)"></button>
+            <br>
+              <button name="but5" onclick="showeditbutton(5)"></button>
+                    <br>
+                      <button name="but6" onclick="showeditbutton(6)"></button>
+                            <br>
+                              <button name="but7" onclick="showeditbutton(7)"></button>
+                                    <br>
+                                      <button name="but8" onclick="showeditbutton(8)"></button>
+                                            <br>
+                                              <button name="but9" onclick="showeditbutton(9)"></button>
+                                                    <br>
+                                                      <button name="but10" onclick="showeditbutton(10)"></button>
+<br>
+<br>
+</div>
+<div>    <button id="addtask_button" onclick="addtodo();"> Add Task </button>
       <button id="show" onclick="showtodofromarray(todolist);"> showfromarray</button>
 
     <!--
@@ -89,8 +112,10 @@ id komt voor in css + js
     <input name="done" type="checkbox"> </input>
     <br>
 
-    <input name="submit" type="button" onclick="addtodo(taskinfo);"></input>
+    <input name="submit" type="button" onclick="addtodo(taskinfo);">add</input>
+    <input id="editshow" name="submit" type="button" onclick="changetodo(taskinfo);"></input>
   </form>
+
 
 </div>
 

@@ -165,3 +165,12 @@ margin-left: 5%;
 
 
 }
+.editbuttons {
+  position: static;
+  margin-left: 80%;
+  margin-top: 20%;
+}
+
+#editshow {
+  display: none;
+}
