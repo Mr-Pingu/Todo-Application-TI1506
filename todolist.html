@@ -4,8 +4,10 @@
 <head>
 
   	<link rel="stylesheet" href="css/stylesheet.css">
-
     <script src="js/todoscript.js"></script>
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="todo-client.js"></script>
+
   <title>todo page</title>
 
 
@@ -35,76 +37,26 @@
             <li> afvinken van de todo
             </li>
         </ul>
-        <u>  hier komt text te staan in de vorm van een paragraaf </u>
+        <u>  
+          hier komt text te staan in de vorm van een paragraaf 
+       </u>
 
  </div>
 
- <div class="thelist">
-        <table style="width:80%" class="ajaxlist" >
-          <thead>
-            <tr>
-                <th> todo: </th>
-                <th> prioriteit </th>
-                <th> afgewerkt? </th>
-                <th> deadline </th>
-                <th> remove </th>
-                <th> edit </th>
-            </tr>
-          </thead>
+<div class="thelist">
+<table>
+    <tr>
+        <th>Task</th>
+        <th>Prio</th>
+        <th>Date</th>
+        <th>Done</th>
+        <th>Edit</th>
+        <th>Remove</th>
+    </tr>
+</table>
 
-          <tbody id="t_newadd">
 
-          </tbody>
-
-        </table>
-    </div>
-    <div class="editbuttons">
-      <button name="but1" onclick="showeditbutton(1)"></button>
-      <br>
-          <button name="but2" onclick="showeditbutton(2)"></button>
-                <br>
-            <button name="but3" onclick="showeditbutton(3)"></button>
-                  <br>
-      <button name="but4" onclick="showeditbutton(4)"></button>
-            <br>
-              <button name="but5" onclick="showeditbutton(5)"></button>
-                    <br>
-                      <button name="but6" onclick="showeditbutton(6)"></button>
-                            <br>
-                              <button name="but7" onclick="showeditbutton(7)"></button>
-                                    <br>
-                                      <button name="but8" onclick="showeditbutton(8)"></button>
-                                            <br>
-                                              <button name="but9" onclick="showeditbutton(9)"></button>
-                                                    <br>
-                                                      <button name="but10" onclick="showeditbutton(10)"></button>
-<br>
-<br>
-</div>
-<div class="removebuttons">
-  <button name="but1" onclick="remove(1)"></button>
-  <br>
-      <button name="but2" onclick="remove(2)"></button>
-            <br>
-        <button name="but3" onclick="remove(3)"></button>
-              <br>
-  <button name="but4" onclick="remove(4)"></button>
-        <br>
-          <button name="but5" onclick="remove(5)"></button>
-                <br>
-                  <button name="but6" onclick="remove(6)"></button>
-                        <br>
-                          <button name="but7" onclick="remove(7)"></button>
-                                <br>
-                                  <button name="but8" onclick="remove(8)"></button>
-                                        <br>
-                                          <button name="but9" onclick="remove(9)"></button>
-                                                <br>
-                                                  <button name="but10" onclick="remove(10)"></button>
-<br>
-<br>
-</div>
-<div>    <button id="addtask_button" onclick="addtodo();"> Add Task </button>
+<div >    <button id="addtask_button" onclick="addtodo();"> Add Task </button>
       <button id="show" onclick="showtodofromarray(todolist);"> showfromarray</button>
 
     <!--
