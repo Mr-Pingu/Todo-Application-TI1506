@@ -23,6 +23,7 @@ app.get("/todos", function (req, res) {
 
 //add todo to the server
 app.get("/addtodo", function (req, res) {
+	console.log("todo added");
 	var url_parts = url.parse(req.url, true);
 	var query = url_parts.query;
 

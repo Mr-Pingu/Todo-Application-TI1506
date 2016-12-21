@@ -37,8 +37,8 @@
             <li> afvinken van de todo
             </li>
         </ul>
-        <u>  
-          hier komt text te staan in de vorm van een paragraaf 
+        <u>
+          hier komt text te staan in de vorm van een paragraaf
        </u>
 
  </div>
@@ -62,6 +62,7 @@
     <!--
 test buttons
     -->
+    <button onclick="todo_popup_show()"> show </button>
     <button onclick="todo_popup_hide()"> hide </button>
     <a href="#" id="addScnt"> New row </a>
   </div>
@@ -73,21 +74,20 @@ id komt voor in css + js
 -->
 
 <div class="addtask_popup" id="popup1">
-
-  <form name="taskinfo" onsubmit="return by_observer();">
-    //taaknaam
-    <input name="taskname" placeholder="todo here" > </input>
+     //taaknaam
+    <input id="add_taskname" name="taskname" placeholder="todo here" > </input>
     <br>
     //priority
-    <input name="priority" type="checkbox"> </input>
+    <input id="add_priority" name="priority" type="checkbox"> </input>
     <br>
     //datum
-    <input name="date" type="date"> <br> </input>
+    <input id="add_date" name="date" type="date"> <br> </input>
     //af
-    <input name="done" type="checkbox"> </input>
+    <input id="add_done" name="done" type="checkbox"> </input>
     <br>
+    <input id="add_submit" name="submit" type="button">add</input>
 
-    <input name="submit" type="button" onclick="addtodo(taskinfo);">add</input>
+
     <input id="editshow" name="submit" type="button" onclick="changetodo(taskinfo);"></input>
   </form>
 
